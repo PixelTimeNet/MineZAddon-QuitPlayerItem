@@ -1,0 +1,34 @@
+# 退出玩家物品 QuitPlayerItem 插件
+# 作者：Month_Light
+
+# 插件版本号
+version: ${project.version}
+
+# 如果玩家拥有 moonlake.quitplayeritem.ignore 权限
+# 则会无视进行检测并处理
+
+# 玩家检测的半径值
+radius: 10
+
+# 允许检测的怪物类型列表
+# 只有当玩家附近实体为这些类型
+# 如果填写 [] 则检测任何怪物类型
+mobList:
+  - 'Zombie'
+  - 'PigZombie'
+  - 'Giant'
+
+# 半径内有怪物掉落的物品总数
+# 0~100 值, 0为不掉落, 100为完全掉落
+mobDrop: 50
+
+# 半径内有玩家掉落的物品总数
+# 0~100 值, 0为不掉落, 100为完全掉落
+playerDrop: 50
+
+# 既有怪物又有玩家则掉落的物品总数
+# 0~100 值, 0为不掉落, 100为完全掉落
+mobPlayerDrop: 50
+
+# 是否开启玩家 KICK 则不进行检测
+kickCancelled: true
